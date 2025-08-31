@@ -1,5 +1,6 @@
 # Godot 4+ specific ignores
 .godot/
+<<<<<<< HEAD
 .nomedia
 
 # Godot-specific ignores
@@ -14,3 +15,18 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+=======
+/android/
+# Godot-specific
+.import/
+export.cfg
+export_presets.cfg
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE / editor configs
+*.swp
+*.tmp
+>>>>>>> c169b50 (Enviando os arquivos iniciais para o MVC do jogo)
