@@ -6,6 +6,7 @@ extends Control
 var checkpoint = 0
 
 func _ready():
+	top_level = true
 	# Quando o jogador pressionar Enter no LineEdit, chamamos _on_command_entered
 	input_line.connect("text_submitted", Callable(self, "_on_command_entered"))
 

@@ -2,7 +2,8 @@ extends Node2D
 
 @onready var player := $player as CharacterBody2D
 @onready var camera := $camera as Camera2D
-@onready var terminal = $Terminal
+@onready var terminal := $Hub/Terminal
+#@onready var terminal = $Terminal
 
 func _ready():
 	player.follow_camera(camera)
@@ -19,7 +20,7 @@ func _toggle_terminal() -> void:
 	get_tree().paused = show   # pausa o jogo quando terminal abre
 
 	if show:
-		terminal.get_node("Panel/VBoxContainer/LineEdit").grab_focus()
+		terminal.get_node("Center/Panel/VBoxContainer/LineEdit").grab_focus()
 
 
 func _on_button_pressed() -> void:

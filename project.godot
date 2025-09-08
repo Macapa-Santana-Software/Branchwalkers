@@ -17,9 +17,10 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=640
-window/size/viewport_height=320
-window/stretch/scale=1.5
+window/size/viewport_width=1280
+window/size/viewport_height=640
+window/stretch/mode="viewport"
+window/stretch/scale=1.7
 
 [input]
 
@@ -41,3 +42,8 @@ toggle_terminal={
 2d_physics/layer_4="items"
 2d_physics/layer_5="hitbox"
 2d_physics/layer_6="hurtbox"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=true
